@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RihaVastraa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light riha-nav">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">
+      <span class="logo">P</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+
+      <ul class="navbar-nav mx-3">
+        <li class="nav-item"><a class="nav-link" href="../casual wear/causal.html">MEN</a></li>
+        <li class="nav-item"><a class="nav-link" href="../ethinic/ethinic.html">WOMEN</a></li>
+        <li class="nav-item"><a class="nav-link" href="../kids wear/kids.html">KIDS</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Home/home.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="../makeup/make.html">BEAUTY</a></li>
+      </ul>
+
+      <form class="d-flex search-box mx-auto">
+        <i class="bi bi-search"></i>
+        <input class="form-control" type="search"
+               placeholder="Search for products, brands and more">
+      </form>
+
+      <div class="d-flex align-items-center icons">
+        <div class="icon-box">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </div>
+        <div class="icon-box">
+          <i class="bi bi-heart"></i>
+          <span>Wishlist</span>
+        </div>
+        <div class="icon-box">
+          <i class="bi bi-bag"></i>
+          <span>Bag</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<div class="products-container">
+<!-- CARD 1 -->
+<div class="product-card">
+    <div class="image-container">
+        <span class="badge">New</span>
+        <img src="../Grooming/2.jpg" alt="DRESS">
+        <input type="checkbox" id="wish1" class="wishlist-checkbox">
+        <label for="wish1" class="wishlist-icon"></label>
+    </div>
+
+    <div class="product-info">
+        <h3>Agaro Hair Dryer</h3>
+        <!-- unicode filled and unicode unfilled stars -->
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹1200</span>
+            <span class="old-price">₹2999</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../ethinic/11.jpg" alt="DRESS">
+        <input type="checkbox" id="wish2" class="wishlist-checkbox">
+        <label for="wish2" class="wishlist-icon"></label>
+    </div>
+
+    <div class="product-info">
+        <h3>Women Cotton Kurti Set</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price-section">
+            <span class="new-price">₹1499</span>
+            <span class="old-price">₹2499</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="product-card">
+    <div class="image-container">
+        <span class="badge">Sale</span>
+        <img src="../lavie/13.webp" alt="DRESS">
+        <input type="checkbox" id="wish3" class="wishlist-checkbox">
+        <label for="wish3" class="wishlist-icon"></label>
+    </div>
+
+    <div class="product-info">
+        <h3>Lavie Women Hand Bag</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹999</span>
+            <span class="old-price">₹5299</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 4 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../login form/2.webp" alt="DRESS">
+        <input type="checkbox" id="wish4" class="wishlist-checkbox">
+        <label for="wish4" class="wishlist-icon"></label>
+    </div>
+
+    <div class="product-info">
+        <h3>Dupe Rolex Watch</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price-section">
+            <span class="new-price">₹1199</span>
+            <span class="old-price">₹4499</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 5 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../makeup/12.webp" alt="DRESS">
+        <input type="checkbox" id="wish5" class="wishlist-checkbox">
+        <label for="wish5" class="wishlist-icon"></label>
+    </div>
+
+    <div class="product-info">
+        <h3>Nykaa Eye Shadow Pallete</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹1399</span>
+            <span class="old-price">₹4999</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+<!-- CARD 6 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../peora/13.webp" alt="DRESS">
+        <input type="checkbox" id="wish6" class="wishlist-checkbox">
+        <label for="wish6" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Peoraa Heart Pendant Chain</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹1299</span>
+            <span class="old-price">₹3199</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 7 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../mens A wear/14.jpg" alt="DRESS">
+        <input type="checkbox" id="wish7" class="wishlist-checkbox">
+        <label for="wish7" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Men,s Active Wear</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price-section">
+            <span class="new-price">₹1499</span>
+            <span class="old-price">₹4999</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 8 -->
+<div class="product-card">
+    <div class="image-container">
+        <span class="badge">Sale</span>
+        <img src="../Home/11.webp" alt="DRESS">
+        <input type="checkbox" id="wish8" class="wishlist-checkbox">
+        <label for="wish8" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Home Decor Light</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹1699</span>
+            <span class="old-price">₹3199</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 9 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../sportswear/5.webp" alt="DRESS">
+        <input type="checkbox" id="wish9" class="wishlist-checkbox">
+        <label for="wish9" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Women Gym Suit</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price-section">
+            <span class="new-price">₹1499</span>
+            <span class="old-price">₹4499</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 10 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../Watches/19.jpg" alt="DRESS">
+        <input type="checkbox" id="wish10" class="wishlist-checkbox">
+        <label for="wish10" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Women Golden Watch</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹899</span>
+            <span class="old-price">₹5899</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 11 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../casual wear/15.jpg" alt="DRESS">
+        <input type="checkbox" id="wish11" class="wishlist-checkbox">
+        <label for="wish11" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Mens Cotton Casual Wear</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price-section">
+            <span class="new-price">₹1299</span>
+            <span class="old-price">₹3499</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 12 -->
+<div class="product-card">
+    <div class="image-container">
+        <span class="badge">New</span>
+        <img src="../casual wear/13.jpg" alt="DRESS">
+        <input type="checkbox" id="wish12" class="wishlist-checkbox">
+        <label for="wish12" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>men Formal Shirt</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹1199</span>
+            <span class="old-price">₹3199</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 13 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../Watches/15.jpg" alt="DRESS">
+        <input type="checkbox" id="wish13" class="wishlist-checkbox">
+        <label for="wish13" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Mens Silver Watch</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹1499</span>
+            <span class="old-price">₹5299</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 14 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../sportswear/8.webp" alt="DRESS">
+        <input type="checkbox" id="wish14" class="wishlist-checkbox">
+        <label for="wish14" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>men"s black Short</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price-section">
+            <span class="new-price">₹999</span>
+            <span class="old-price">₹3999</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 15 -->
+<div class="product-card">
+    <div class="image-container">
+        <img src="../makeup/17.webp" alt="DRESS">
+        <input type="checkbox" id="wish15" class="wishlist-checkbox">
+        <label for="wish15" class="wishlist-icon"></label>
+    </div>
+    <div class="product-info">
+        <h3>Spekta Women"s Lip Stick</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price-section">
+            <span class="new-price">₹1399</span>
+            <span class="old-price">₹4999</span>
+        </div>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</div>
+</div>
+    <!-- Footer -->
+  <footer class="footer">
+
+  <!-- POPULAR SEARCHES -->
+  <div class="footer-container">
+    <h4 class="footer-heading">POPULAR SEARCHES</h4>
+
+    <div class="popular-searches">
+      <a href="../makeup/make.html">Makeup</a>
+      <a href="../kids wear/kids.html">Dresses For Girls</a>
+      <a href="../Women f/women.html">Sandals</a>
+      <a href="../lavie/lavie.html">Handbags</a>
+      <a href="../Watches/watch.html"> Watches</a>
+      <a href="../lavie/lavie.html">Bags</a>
+      <a href="../ethinic/ethinic.html">Kurtis</a>
+      <a href="../peora/jewel.html">Jewellery</a>
+      <a href="../ethinic/ethinic.html">Tops</a>
+      <a href="../mens A wear/index.html">Mens Activewear</a>
+      <a href="../Grooming/groomin.html">Grooming</a>
+      <a href="../Home/home.html">Home Decor</a>
+    </div>
+
+    <!-- CONTACT ROW -->
+    <div class="contact-row">
+      <span>In case of any concern,</span>
+      <a href="../login form/contact.html" class="contact-link">Contact Us</a>
+    </div>
+
+    <!-- COPYRIGHT ROW -->
+    <div class="copyright-row">
+      <div>© 2026 www.rihavastraa.com. All rights reserved.</div>
+      <div>A Rihavastraa Company</div>
+    </div>
+
+    <hr />
+
+    <!-- REGISTERED ADDRESS -->
+    <div class="address-section">
+      <div class="address-left">
+        <h4 class="footer-heading">Registered Office Address</h4>
+        <p>
+          Rihavastraa Pvt. Ltd.,<br>
+          Fashion Tech Park,<br>
+          Outer Ring Road,<br>
+          Library Street,<br>
+          Huzurnagar – 508204, India
+        </p>
+      </div>
+
+      <div class="address-right">
+        <p>CIN: U00000KA2026PTC000000</p>
+        <p>Telephone: +91-7675053920</p>
+      </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class="footer-description">
+      <h4 class="footer-heading">ONLINE SHOPPING MADE EASY AT RIHAVASTRAA</h4>
+      <p>
+        Rihavastraa is your ultimate fashion destination for men, women and kids.
+        Explore clothing, footwear, accessories and lifestyle products.
+        Discover the latest trends and get your favourites delivered straight to your doorstep.
+      </p>
+    </div>
+
+</footer>
+
+</body>
+</html>

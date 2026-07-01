@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio - Fashion Stylist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    background-size: cover;
+    background-position: center 80%;  /* 🔥 Change this */
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.portfolio-title {
+    text-align: center;
+    margin: 50px 0 10px;
+}
+
+.portfolio-subtitle {
+    text-align: center;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.section-space {
+    padding-bottom: 60px;
+}
+.shop-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: #e85c50;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg px-4 shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">RihaVastraa</a>
+
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Title -->
+<div class="portfolio-title">
+    <h2>Our Styling Portfolio</h2>
+</div>
+<div class="portfolio-subtitle">
+    Date Jewellery | Casual Looks | Luxury Watches
+</div>
+
+<!-- Portfolio Section -->
+<div class="container section-space">
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="4.webp" class="card-img-top" alt="Bridal Look">
+                <div class="card-body">
+                    <h5 class="card-title">Date Jewellery</h5>
+                    <p class="card-text">Elegant Simple Jewellery.</p>
+                    <a href="../peora/jewel.html" class="btn btn-warning btn-lg fw-bold shop-btn">Shop Now </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="1.avif" class="card-img-top" alt="Casual Look">
+                <div class="card-body">
+                    <h5 class="card-title">Casual Looks</h5>
+                    <p class="card-text">Modern everyday fashion styling.</p>
+                     <a href="../kids wear/kids.html" class="btn btn-warning btn-lg fw-bold shop-btn">Shop Now </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="2.webp" class="card-img-top" alt="Luxury Event">
+                <div class="card-body">
+                    <h5 class="card-title">Luxury Watches</h5>
+                    <p class="card-text">Premium styling Watches for grand occasions.</p>
+                    <a href="../Watches/watch.html" class="btn btn-warning btn-lg fw-bold shop-btn">Shop Now </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

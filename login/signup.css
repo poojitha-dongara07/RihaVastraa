@@ -1,0 +1,170 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #000;
+    padding-top: 100px;   
+}
+/* nav bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: fixed;      /* Better than absolute */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: black;    
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f3d5ab;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f3d5ab;
+}
+
+/* hero section */
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(to left, rgba(0,0,0,0.9) 45%, rgba(0,0,0,0.2)),
+        url("1.jpeg") no-repeat center center;
+
+    background-size: cover;
+    background-position: center top;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 120px;
+}
+
+.hero-content {
+    max-width: 550px;
+    color: white;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f3d5ab;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/* signup/login section */
+.signup-section {
+    margin-top: 40px;
+}
+
+.signup-section h4 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Input Fields */
+.signup-section input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.signup-section input::placeholder {
+    color: #ddd;
+}
+
+/* buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Make anchor behave like button */
+.signup-btn,
+.login-btn {
+    padding: 12px 30px;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+}
+
+/* Hover effect */
+.signup-btn:hover,
+.login-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* responsive */
+@media (max-width: 992px) {
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .hero {
+        justify-content: center;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

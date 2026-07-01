@@ -1,0 +1,278 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* grid layout */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* product grid */
+
+.product-card {
+    background: #ffffff;
+    padding: 20px 18px 22px 18px; 
+    border-radius: 16px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* to get blush kind of bg */
+.product-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #fff6f8 0%, #fdecef 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.product-card:hover::before {
+    opacity: 1;
+}
+
+/* Keep content above overlay */
+.product-card * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Image */
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    margin-bottom: 12px;
+}
+
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+/* text styling */
+
+.product-card h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.p-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.in-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 14px;
+}
+
+p {
+    margin: 0;
+}
+
+/* button */
+
+.add-cart-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #B76E79, #9F5C66);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-cart-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(183,110,121,0.4);
+}
+
+/* wishlist */
+
+.wishlist-checkbox {
+    display: none;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ffffff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.wishlist-icon::after {
+    content: "♡";
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+.wishlist-checkbox:checked + .wishlist-icon::after {
+    content: "♥";
+    color: #FF0000;
+}
+
+.wishlist-icon:hover {
+    transform: scale(1.1);
+}
+/* footer */
+
+footer {
+    background-color: #f5f5f6;
+    padding: 40px 100px;
+    font-family: Arial, sans-serif;
+    color: #696b79;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-heading {
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+}
+
+/* Popular Searches */
+.popular-searches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    line-height: 26px;
+}
+
+.popular-searches a {
+    text-decoration: none;
+    color: #696b79;
+    position: relative;
+    padding-right: 10px;
+}
+
+.popular-searches a::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: #b5b5b5;
+}
+
+.popular-searches a:last-child::after {
+    content: "";
+}
+
+/* Contact */
+.contact-row {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.contact-link {
+    margin-left: 5px;
+    color: #526cd0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+.copyright-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Address */
+.address-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.address-section p {
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.footer-description {
+    margin-top: 40px;
+}
+
+.footer-description p {
+    max-width: 1000px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eaeaec;
+    margin: 25px 0;
+}
+/* responsive */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .address-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}

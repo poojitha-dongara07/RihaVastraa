@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.btn-custom {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #e85c50;
+    transform: scale(1.05);
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #555;
+}
+
+.social-icons a:hover {
+    color: #ff6f61;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">RihaVastraa</a>
+
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container contact-section">
+    <div class="row g-5">
+
+        <!-- Contact Info -->
+        <div class="col-md-5">
+            <div class="contact-card">
+                <h3 class="mb-4">Get In Touch</h3>
+                <p><strong>Email:</strong> dongarapoojithareddy@gmail.com</p>
+                <p><strong>Phone:</strong> +91-7675053920</p>
+                <p><strong>Location:</strong> Hyderabad, India</p>
+
+                <div class="social-icons mt-4">
+                    <a href="@rihavastraa">Instagram</a>
+                    <a href="@rihavastraa16">Facebook</a>
+                    <a href="rihavastraa.com">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-7">
+            <div class="contact-card">
+                <h3 class="mb-4">Send a Message</h3>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="text-center py-4 mt-5 bg-light">
+    <p class="mb-0">© 2026 RihaVastraa | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

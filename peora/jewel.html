@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jewellery Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jewel.css">
+</head>
+
+<body>
+
+<div class="card-container">
+
+<!-- Repeatable Product Card -->
+<!-- I am showing same structure for all 30 cards with unique wishlist IDs -->
+
+<!-- CARD 1 -->
+<div class="product-card" data-id="1">
+    <input type="checkbox" id="wish1" class="wishlist-checkbox">
+    <label for="wish1" class="wishlist-icon"></label>
+    <img src="1.jpg" alt="Product 1">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Your vibe, your shine</p></div>
+    <div class="in-card"><p>Rs.99</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="1">
+    <button type="submit">Add to Cart</button>
+  </form>
+</div>
+
+<!-- CARD 2 -->
+<div class="product-card" data-id="2">
+    <input type="checkbox" id="wish2" class="wishlist-checkbox">
+    <label for="wish2" class="wishlist-icon"></label>
+    <img src="2.webp" alt="Product 2">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Adorn your story</p></div>
+    <div class="in-card"><p>Rs.199</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="2">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 3 -->
+<div class="product-card" data-id="3">
+    <input type="checkbox" id="wish3" class="wishlist-checkbox">
+    <label for="wish3" class="wishlist-icon"></label>
+    <img src="3.webp" alt="Product 3">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Wear your heart in gold</p></div>
+    <div class="in-card"><p>Rs.219</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="3">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+<!-- CARD 4 -->
+<div class="product-card" data-id="4">
+    <input type="checkbox" id="wish4" class="wishlist-checkbox">
+    <label for="wish4" class="wishlist-icon"></label>
+    <img src="4.webp" alt="Product 4">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Elegance in every sparkle</p></div>
+    <div class="in-card"><p>Rs.599</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="4">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 5 -->
+<div class="product-card" data-id="5">
+    <input type="checkbox" id="wish5" class="wishlist-checkbox">
+    <label for="wish5" class="wishlist-icon"></label>
+    <img src="5.webp" alt="Product 5">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Little details, big sparkle</p></div>
+    <div class="in-card"><p>Rs.1599</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="5">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 6 -->
+<div class="product-card" data-id="6">
+    <input type="checkbox" id="wish6" class="wishlist-checkbox">
+    <label for="wish6" class="wishlist-icon"></label>
+    <img src="6.webp" alt="Product 6">
+    <h1>Peora</h1>
+    <div class="p-card"><p>A touch of luxury</p></div>
+    <div class="in-card"><p>Rs.499</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="6">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 7 -->
+<div class="product-card" data-id="7">
+    <input type="checkbox" id="wish7" class="wishlist-checkbox">
+    <label for="wish7" class="wishlist-icon"></label>
+    <img src="7.webp" alt="Product 7">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Glow differently</p></div>
+    <div class="in-card"><p>Rs.1299</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="7">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 8 -->
+<div class="product-card" data-id="8">
+    <input type="checkbox" id="wish8" class="wishlist-checkbox">
+    <label for="wish8" class="wishlist-icon"></label>
+    <img src="8.webp" alt="Product 8">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Shine beyond limits</p></div>
+    <div class="in-card"><p>Rs.1999</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="8">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 9 -->
+<div class="product-card" data-id="9">
+    <input type="checkbox" id="wish9" class="wishlist-checkbox">
+    <label for="wish9" class="wishlist-icon"></label>
+    <img src="9.webp" alt="Product 9">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Designed to shine</p></div>
+    <div class="in-card"><p>Rs.6500</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="9">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 10 -->
+<div class="product-card" data-id="10">
+    <input type="checkbox" id="wish10" class="wishlist-checkbox">
+    <label for="wish10" class="wishlist-icon"></label>
+    <img src="10.webp" alt="Product 10">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Your sparkle, your rules</p></div>
+    <div class="in-card"><p>Rs.999</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="10">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 11 -->
+<div class="product-card" data-id="11">
+    <input type="checkbox" id="wish11" class="wishlist-checkbox">
+    <label for="wish11" class="wishlist-icon"></label>
+    <img src="11.webp" alt="Product 11">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Forever starts with a sparkle</p></div>
+    <div class="in-card"><p>Rs.6999</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="11">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 12 -->
+<div class="product-card" data-id="12">
+    <input type="checkbox" id="wish12" class="wishlist-checkbox">
+    <label for="wish12" class="wishlist-icon"></label>
+    <img src="12.webp" alt="Product 12">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Simply stunning</p></div>
+    <div class="in-card"><p>Rs.2539</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="12">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 13 -->
+<div class="product-card" data-id="13">
+    <input type="checkbox" id="wish13" class="wishlist-checkbox">
+    <label for="wish13" class="wishlist-icon"></label>
+    <img src="13.webp" alt="Product 13">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Jewelry that whispers love</p></div>
+    <div class="in-card"><p>Rs.1999</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="13">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 14 -->
+<div class="product-card" data-id="14">
+    <input type="checkbox" id="wish14" class="wishlist-checkbox">
+    <label for="wish14" class="wishlist-icon"></label>
+    <img src="14.webp" alt="Product 14">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Moments made magical</p></div>
+    <div class="in-card"><p>Rs.13999</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="14">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 15 -->
+<div class="product-card" data-id="15">
+    <input type="checkbox" id="wish15" class="wishlist-checkbox">
+    <label for="wish15" class="wishlist-icon"></label>
+    <img src="15.webp" alt="Product 15">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Celebrate love with shine</p></div>
+    <div class="in-card"><p>Rs.6572</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="15">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 16 -->
+<div class="product-card" data-id="16">
+    <input type="checkbox" id="wish16" class="wishlist-checkbox">
+    <label for="wish16" class="wishlist-icon"></label>
+    <img src="16.webp" alt="Product 16">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Gifts that glitter with love.</p></div>
+    <div class="in-card"><p>Rs.1123</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="16">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 17 -->
+<div class="product-card" data-id="17">
+    <input type="checkbox" id="wish17" class="wishlist-checkbox">
+    <label for="wish17" class="wishlist-icon"></label>
+    <img src="17.jpg" alt="Product 17">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Shine like you mean it</p></div>
+    <div class="in-card"><p>Rs.1190</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="17">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+<!-- CARD 18 -->
+<div class="product-card" data-id="18">
+    <input type="checkbox" id="wish18" class="wishlist-checkbox">
+    <label for="wish18" class="wishlist-icon"></label>
+    <img src="18.webp" alt="Product 18">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Own your glow</p></div>
+    <div class="in-card"><p>Rs.4532</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="18">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 19 -->
+<div class="product-card" data-id="19">
+    <input type="checkbox" id="wish19" class="wishlist-checkbox">
+    <label for="wish19" class="wishlist-icon"></label>
+    <img src="19.webp" alt="Product 19">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Dazzle differently</p></div>
+    <div class="in-card"><p>Rs.6299</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="19">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 20 -->
+<div class="product-card" data-id="20">
+    <input type="checkbox" id="wish20" class="wishlist-checkbox">
+    <label for="wish20" class="wishlist-icon"></label>
+    <img src="20.webp" alt="Product 20">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Let your sparkle speak</p></div>
+    <div class="in-card"><p>Rs.5999</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="20">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 21 -->
+<div class="product-card" data-id="21">
+    <input type="checkbox" id="wish21" class="wishlist-checkbox">
+    <label for="wish21" class="wishlist-icon"></label>
+    <img src="21.webp" alt="Product 21">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Slay the sparkle game</p></div>
+    <div class="in-card"><p>Rs.6020</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="21">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 22 -->
+<div class="product-card" data-id="22">
+    <input type="checkbox" id="wish22" class="wishlist-checkbox">
+    <label for="wish22" class="wishlist-icon"></label>
+    <img src="22.webp" alt="Product 22">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Layer it. Love it. Live it.</p></div>
+    <div class="in-card"><p>Rs.1999</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="22">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 23 -->
+<div class="product-card" data-id="23">
+    <input type="checkbox" id="wish23" class="wishlist-checkbox">
+    <label for="wish23" class="wishlist-icon"></label>
+    <img src="23.webp" alt="Product 23">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Bling it on!</p></div>
+    <div class="in-card"><p>Rs.4999</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="23">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 24 -->
+<div class="product-card" data-id="24">
+    <input type="checkbox" id="wish24" class="wishlist-checkbox">
+    <label for="wish24" class="wishlist-icon"></label>
+    <img src="24.webp" alt="Product 24">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Crafted for royalty.</p></div>
+    <div class="in-card"><p>Rs.2349</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="24">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 25 -->
+<div class="product-card" data-id="25">
+    <input type="checkbox" id="wish25" class="wishlist-checkbox">
+    <label for="wish25" class="wishlist-icon"></label>
+    <img src="25.webp" alt="Product 25">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Grace in every gem</p></div>
+    <div class="in-card"><p>Rs.1900</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="25">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 26 -->
+<div class="product-card" data-id="26">
+    <input type="checkbox" id="wish26" class="wishlist-checkbox">
+    <label for="wish26" class="wishlist-icon"></label>
+    <img src="26.webp" alt="Product 26">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Own The Shine</p></div>
+    <div class="in-card"><p>Rs.2359</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="26">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 27 -->
+<div class="product-card" data-id="27">
+    <input type="checkbox" id="wish27" class="wishlist-checkbox">
+    <label for="wish27" class="wishlist-icon"></label>
+    <img src="27.webp" alt="Product 27">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Timeless Treasure</p></div>
+    <div class="in-card"><p>Rs.4050</p></div>
+    <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="27">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 28 -->
+<div class="product-card" data-id="28">
+    <input type="checkbox" id="wish28" class="wishlist-checkbox">
+    <label for="wish28" class="wishlist-icon"></label>
+    <img src="28.webp" alt="Product 28">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Shine & Slay</p></div>
+    <div class="in-card"><p>Rs.999</p></div>
+<form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="28">
+    <button type="submit">Add to Cart</button>
+</form><button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- CARD 29 -->
+<div class="product-card" data-id="29">
+    <input type="checkbox" id="wish29" class="wishlist-checkbox">
+    <label for="wish29" class="wishlist-icon"></label>
+    <img src="29.webp" alt="Product 29">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Radiant Beauty</p></div>
+    <div class="in-card"><p>Rs.1999</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="29">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+
+<!-- CARD 30 -->
+<div class="product-card" data-id="30">
+    <input type="checkbox" id="wish30" class="wishlist-checkbox">
+    <label for="wish30" class="wishlist-icon"></label>
+    <img src="30.webp" alt="Product 30">
+    <h1>Peora</h1>
+    <div class="p-card"><p>Culture in Gold</p></div>
+    <div class="in-card"><p>Rs.5999</p></div>
+   <form action="AddToCartServlet" method="post">
+    <input type="hidden" name="product_id" value="30">
+    <button type="submit">Add to Cart</button>
+</form>
+</div>
+</div>
+<!-- ================= FOOTER ================= -->
+<!-- Footer -->
+  <footer class="footer">
+
+  <!-- POPULAR SEARCHES -->
+  <div class="footer-container">
+    <h4 class="footer-heading">POPULAR SEARCHES</h4>
+
+    <div class="popular-searches">
+      <a href="../makeup/make.html">Makeup</a>
+      <a href="../kids wear/kids.html">Dresses For Girls</a>
+      <a href="../Women f/women.html">Sandals</a>
+      <a href="../lavie/lavie.html">Handbags</a>
+      <a href="../Watches/watch.html"> Watches</a>
+      <a href="../lavie/lavie.html">Bags</a>
+      <a href="../ethinic/ethinic.html">Kurtis</a>
+      <a href="../peora/jewel.html">Jewellery</a>
+      <a href="../ethinic/ethinic.html">Tops</a>
+      <a href="../mens A wear/index.html">Mens Activewear</a>
+      <a href="../Grooming/groomin.html">Grooming</a>
+      <a href="../Home/home.html">Home Decor</a>
+    </div>
+
+    <!-- CONTACT ROW -->
+    <div class="contact-row">
+      <span>In case of any concern,</span>
+      <a href="../login form/contact.html" class="contact-link">Contact Us</a>
+    </div>
+
+    <!-- COPYRIGHT ROW -->
+    <div class="copyright-row">
+      <div>© 2026 www.rihavastraa.com. All rights reserved.</div>
+      <div>A Rihavastraa Company</div>
+    </div>
+
+    <hr />
+
+    <!-- REGISTERED ADDRESS -->
+    <div class="address-section">
+      <div class="address-left">
+        <h4 class="footer-heading">Registered Office Address</h4>
+        <p>
+          Rihavastraa Pvt. Ltd.,<br>
+          Fashion Tech Park,<br>
+          Outer Ring Road,<br>
+          Library Street,<br>
+          Huzurnagar – 508204, India
+        </p>
+      </div>
+
+      <div class="address-right">
+        <p>CIN: U00000KA2026PTC000000</p>
+        <p>Telephone: +91-7675053920</p>
+      </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class="footer-description">
+      <h4 class="footer-heading">ONLINE SHOPPING MADE EASY AT RIHAVASTRAA</h4>
+      <p>
+        Rihavastraa is your ultimate fashion destination for men, women and kids.
+        Explore clothing, footwear, accessories and lifestyle products.
+        Discover the latest trends and get your favourites delivered straight to your doorstep.
+      </p>
+    </div>
+
+</footer>
+
+</body>
+</html>
