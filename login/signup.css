@@ -52,7 +52,7 @@ body {
 
     background:
         linear-gradient(to left, rgba(0,0,0,0.9) 45%, rgba(0,0,0,0.2)),
-        url("1.jpeg") no-repeat center center;
+        url("login/1.jpeg") no-repeat center center;
 
     background-size: cover;
     background-position: center top;
